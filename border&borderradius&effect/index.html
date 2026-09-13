@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circles</title>
+
+    <style>
+      body {
+        background: #f5f5f5;
+        position: relative;
+        height: 100vh;
+      }
+
+      .container {
+        display: flex;
+        gap: 20px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .circle {
+        width: 60px;
+        height: 60px;
+
+        background: rgba(255, 255, 255, 0.15);
+
+        border: 3px solid;
+        border-radius: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 25px;
+        font-weight: bold;
+
+        cursor: pointer;
+
+        transition: 0.3s;
+      }
+
+      .a {
+        color: red;
+        border-color: red;
+      }
+
+      .b {
+        color: blue;
+        border-color: blue;
+      }
+
+      .c {
+        color: green;
+        border-color: green;
+      }
+
+      .d {
+        color: purple;
+        border-color: purple;
+      }
+
+      /* Hover */
+
+      .a:hover {
+        background: #ff6b6b;
+        color: white;
+        border-color: #ff6b6b;
+
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+      }
+
+      .b:hover {
+        background: #4dabf7;
+        color: white;
+        border-color: #4dabf7;
+
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 5px 15px rgba(77, 171, 247, 0.4);
+      }
+
+      .c:hover {
+        background: #51cf66;
+        color: white;
+        border-color: #51cf66;
+
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 5px 15px rgba(81, 207, 102, 0.4);
+      }
+
+      .d:hover {
+        background: #cc5de8;
+        color: white;
+        border-color: #cc5de8;
+
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 5px 15px rgba(204, 93, 232, 0.4);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="circle a">A</div>
+      <div class="circle b">B</div>
+      <div class="circle c">C</div>
+      <div class="circle d">D</div>
+    </div>
+  </body>
+</html>
